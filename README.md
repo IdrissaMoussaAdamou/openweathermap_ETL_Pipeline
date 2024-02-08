@@ -3,6 +3,13 @@ Dans ce projet d'ingénierie de données, nous construisons et automatisons un p
 
 Tout le fonctionnement étant orchestré avec Airflow.
 
+## Détails de jobs airflow : 
+Vous trouverez le DAG utilisé dans le fichier weather_dag.py
+ce dernier est constitué de :
+- un HttpSensor :  is_weather_api_ready qui teste si l'API est disponible pour une communication
+- un SimpleHttpOperator : qui se charge de récupérer des données de l'API
+- un PythonOperator : qui transforme les données récupérées et les charge dans un S3 bucket
+
 ## Architecture de la pipeline : 
 
 ![Data pipeline](image.png)
