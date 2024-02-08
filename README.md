@@ -5,4 +5,4 @@ Tout le fonctionnement étant orchestré avec Airflow.
 
 ## Architecture de la pipeline : 
 
-![Data pipeline](images/schema.png)
+![Data pipeline](image.png)
